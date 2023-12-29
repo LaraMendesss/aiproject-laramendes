@@ -1,23 +1,29 @@
 
+function displayDestination (response){
+    console.log(response.data.answer);
 
-
+    new Typewriter('#text', {
+        strings: response.data.answer,
+        autoStart: true,
+        delay: 100,
+        
+      });
+}
 
 function generateText(event){
     event.preventDefault();
-   
-    new Typewriter('#text', {
-        strings: 'Lara Mendes',
-        autoStart: true,
-        delay: 300,
-        
-      });
+let textElement = document.querySelector(".instructions");
+let apiKey = `dda9a648t200432eo3334f85db57e348`;
+let context = 'You are a AI Travel Assistant that loves to recommend the best destination to their clients.Please provide only one answer: one destination in bold with short description of 4 lines maximum. Please place destination inside a <strong>';
+let prompt = textElement.value;
+let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
 
+let suggestion = document.querySelector("#text");
+suggestion.innerHTML="We are selecting the destination that best suits you...";
+
+axios.get(apiUrl).then(displayDestination);
 }
-
-
-
-
 
 let form = document.querySelector("form");
 form.addEventListener("submit", generateText);

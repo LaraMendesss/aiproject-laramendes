@@ -20,7 +20,7 @@ let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${
 
 
 let suggestion = document.querySelector("#text");
-suggestion.innerHTML="We are selecting the destination that best suits you...";
+suggestion.innerHTML="<div class='blinky'>Sit back & relax, while we select the perfect destination for you...</div>";
 
 axios.get(apiUrl).then(displayDestination);
 }

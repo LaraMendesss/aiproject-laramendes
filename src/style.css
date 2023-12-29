@@ -84,7 +84,7 @@ font-size: 15px;
 line-height: 1.8;
 background-color: white;
 padding-left: 10px;
-padding-bottom: 20px;
+
 border-left: 5px solid navy;
 margin: 0 270px 0 270px;
 
@@ -92,9 +92,22 @@ margin: 0 270px 0 270px;
 }
 
 footer{
-    padding: 10px;
+    
+  padding: 8px;
     background-color: whitesmoke;
     font-size: 13px;
-   margin-top: 20px;
+    margin-top: 45px;
+   
     text-align: center;
+   
 }
+
+.blinky {
+    font-size: 16px;
+    line-height: 1.8;
+    background-color: white
+    padding-left: 10px;
+    padding: 40px;
+    color: navy;
+    font-weight: 700;
+}    

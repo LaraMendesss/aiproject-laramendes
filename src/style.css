@@ -7,8 +7,10 @@ body{
    
     max-width: 1400px;
     margin: 0 auto;
+
     background-position: center;
     background-color: white;
+    
   
 }
 header{
@@ -84,30 +86,30 @@ font-size: 15px;
 line-height: 1.8;
 background-color: white;
 padding-left: 10px;
-
+padding-bottom: 30px;
 border-left: 5px solid navy;
 margin: 0 270px 0 270px;
-
 
 }
 
 footer{
     
-  padding: 8px;
-    background-color: whitesmoke;
+
+    background-color: white;
     font-size: 13px;
-    margin-top: 45px;
-   
-    text-align: center;
-   
+    margin-top: 50px;
+    margin-bottom: 20px;
+  text-align: center;
+  padding-bottom: 5px;
+
 }
 
-.blinky {
-    font-size: 16px;
+.color{
+    font-size: 15px;
     line-height: 1.8;
-    background-color: white
+color: gray;
+    
     padding-left: 10px;
-    padding: 40px;
-    color: navy;
-    font-weight: 700;
-}    
+  
+   
+}
